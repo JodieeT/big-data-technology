@@ -54,8 +54,8 @@ Any list of Yahoo Finance tickers can be substituted. No manual data download is
 **Step 1.** Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/minvar_l2_project.git
-cd minvar_l2_project
+git clone https://github.com/JodieeT/big-data-technology.git
+cd big-data-technology
 ```
 
 **Step 2.** Install the package in editable mode:
@@ -79,12 +79,7 @@ minvar_l2_project/
 │
 ├── README.md
 ├── pyproject.toml          # Package configuration and dependencies
-├── requirements.txt
 │
-├── data/                   # Folder for any locally cached data files
-│
-├── notebooks/
-│   └── exploratory_analysis.ipynb
 │
 ├── src/
 │   └── minvar_l2/          # Main package
@@ -93,8 +88,7 @@ minvar_l2_project/
 │       ├── covariance.py   # Covariance matrix estimators
 │       ├── optimizer.py    # Core portfolio optimizer
 │       ├── backtest.py     # Monthly rebalancing backtest engine
-│       ├── metrics.py      # Portfolio performance metrics
-│       └── config.py       # Configuration constants
+│       └── metrics.py      # Portfolio performance metrics
 │
 ├── scripts/
 │   └── run_backtest.py     # End-to-end backtest script
