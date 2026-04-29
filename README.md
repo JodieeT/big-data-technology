@@ -97,8 +97,7 @@ minvar_l2_project/
 │       └── config.py       # Configuration constants
 │
 ├── scripts/
-│   ├── run_backtest.py     # End-to-end backtest script
-│   └── run_example.py
+│   └── run_backtest.py     # End-to-end backtest script
 │
 └── tests/                  # Unit tests (pytest)
     ├── test_data.py
