@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from minvar_l2.metrics import (
+from src.metrics import (
     total_return,
     annualized_return,
     annualized_volatility,

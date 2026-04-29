@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from minvar_l2.optimizer import min_variance_l2
+from src.optimizer import min_variance_l2
 
 
 # ── helpers ────────────────────────────────────────────────────────────────────

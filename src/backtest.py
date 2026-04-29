@@ -1,7 +1,7 @@
 import pandas as pd
 
-from minvar_l2.covariance import sample_covariance, ewma_covariance
-from minvar_l2.optimizer import min_variance_l2
+from covariance import sample_covariance, ewma_covariance
+from optimizer import min_variance_l2
 
 
 def run_monthly_backtest(
