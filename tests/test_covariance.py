@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from src.covariance import sample_covariance, ewma_covariance
+from minvar_l2.covariance import sample_covariance, ewma_covariance
 
 
 # ── helpers ────────────────────────────────────────────────────────────────────

@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from src.metrics import (
+from minvar_l2.metrics import (
     total_return,
     annualized_return,
     annualized_volatility,
@@ -84,7 +84,8 @@ def test_annualized_volatility_scales_with_sqrt():
 # ── sharpe_ratio ───────────────────────────────────────────────────────────────
 
 def test_sharpe_ratio_positive_for_good_returns():
-    returns = pd.Series([0.01] * 52)
+    np.random.seed(42)
+    returns = pd.Series(0.01 + np.random.randn(52) * 0.001)
     sr = sharpe_ratio(returns, risk_free_rate=0.0, periods_per_year=52)
     assert sr > 0
 

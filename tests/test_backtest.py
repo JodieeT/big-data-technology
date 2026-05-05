@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from src.backtest import run_monthly_backtest
+from minvar_l2.backtest import run_monthly_backtest
 
 
 # ── helpers ────────────────────────────────────────────────────────────────────

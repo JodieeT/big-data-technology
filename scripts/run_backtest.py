@@ -1,6 +1,6 @@
-from data import download_price_data, compute_returns
-from backtest import run_monthly_backtest
-from metrics import performance_summary
+from minvar_l2.data import download_price_data, compute_returns
+from minvar_l2.backtest import run_monthly_backtest
+from minvar_l2.metrics import performance_summary
 
 
 def main():

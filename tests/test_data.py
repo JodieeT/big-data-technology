@@ -3,7 +3,7 @@ import numpy as np
 import pytest
 from unittest.mock import patch
 
-from src.data import compute_returns, download_price_data
+from minvar_l2.data import compute_returns, download_price_data
 
 
 # ── compute_returns ────────────────────────────────────────────────────────────
@@ -70,7 +70,7 @@ def test_download_price_data_multi_ticker():
     tickers = ["AAPL", "MSFT"]
     mock_df = _make_mock_download(tickers)
 
-    with patch("src.data.yf.download", return_value=mock_df):
+    with patch("minvar_l2.data.yf.download", return_value=mock_df):
         prices = download_price_data(tickers, start="2023-01-01", end="2023-03-01")
 
     assert isinstance(prices, pd.DataFrame)
@@ -82,7 +82,7 @@ def test_download_price_data_single_ticker():
     tickers = ["AAPL"]
     mock_df = _make_mock_download(tickers)
 
-    with patch("src.data.yf.download", return_value=mock_df):
+    with patch("minvar_l2.data.yf.download", return_value=mock_df):
         prices = download_price_data(tickers, start="2023-01-01", end="2023-03-01")
 
     assert isinstance(prices, pd.DataFrame)
@@ -97,7 +97,7 @@ def test_download_price_data_drops_na():
     data = np.array([[100, 200], [np.nan, 201], [102, 202], [103, 203], [104, 204]])
     mock_df = pd.DataFrame(data, index=dates, columns=cols)
 
-    with patch("src.data.yf.download", return_value=mock_df):
+    with patch("minvar_l2.data.yf.download", return_value=mock_df):
         prices = download_price_data(tickers, start="2023-01-01", end="2023-03-01")
 
     assert not prices.isnull().any().any()
