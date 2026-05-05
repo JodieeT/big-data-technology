@@ -15,6 +15,7 @@ A Python package for constructing and backtesting **minimum variance portfolios*
 - [Module Reference](#module-reference)
 - [Running the Backtest Script](#running-the-backtest-script)
 - [Running Tests](#running-tests)
+- [Unit Test Coverage](#unit-test)
 
 ---
 
