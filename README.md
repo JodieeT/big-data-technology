@@ -297,3 +297,25 @@ pytest tests/test_optimizer.py -v
 ```
 
 The test suite covers all five modules (`data`, `covariance`, `optimizer`, `metrics`, `backtest`) with over **50 unit tests** targeting correctness, edge cases, and mathematical properties of the optimization.
+
+## Unit Test Coverage
+
+The unit test coverage is 98% across the `minvar_l2` package.
+
+| File | Statements | Missed | Coverage | Missing Lines |
+
+|---|---:|---:|---:|---|
+
+| `src/minvar_l2/__init__.py` | 4 | 0 | 100% | - |
+
+| `src/minvar_l2/backtest.py` | 33 | 1 | 97% | 46 |
+
+| `src/minvar_l2/covariance.py` | 5 | 0 | 100% | - |
+
+| `src/minvar_l2/data.py` | 10 | 0 | 100% | - |
+
+| `src/minvar_l2/metrics.py` | 23 | 0 | 100% | - |
+
+| `src/minvar_l2/optimizer.py` | 16 | 1 | 94% | 56 |
+
+| **Total** | **91** | **2** | **98%** | - |
